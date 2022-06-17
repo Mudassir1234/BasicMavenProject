@@ -18,6 +18,7 @@ public class ActionClass {
         for (WebElement MyElements : ContactList) {
 
             System.out.println(MyElements.getText() + " you got a list");
+            System.out.println("just for gitbub");
 
 
 
