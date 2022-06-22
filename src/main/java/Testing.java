@@ -12,6 +12,7 @@ public class Testing {
             @Test
 
 
+
             public void firstestcase() throws InterruptedException {
                 WebDriverManager.chromedriver().setup();
                 WebDriver driver=new ChromeDriver();
@@ -41,7 +42,6 @@ public class Testing {
                 selectyears.selectByValue("1992");
                // driver.close();
             }
-
 
 
 

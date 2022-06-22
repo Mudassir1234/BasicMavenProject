@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -56,6 +57,7 @@ public class RobotClass {
             WebElement element = driver.findElement(By.xpath("//input[@placeholder='Search']"));
             element.sendKeys("selenium");
             Actions action = new Actions(driver);
+            action.sendKeys(Keys.ENTER).build().perform();
 
         }
 
